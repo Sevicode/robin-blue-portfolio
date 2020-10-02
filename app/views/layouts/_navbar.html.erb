@@ -1,28 +1,28 @@
  <%# ------Nav bar here---- %>
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <%= link_to  "Robin Blue", root_path, class: "navbar-brand" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <%= link_to  "Home", pages_home_path %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+       <%= link_to  "About", pages_about_path %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Character Design</a>
+        <%= link_to  "Character Design", pages_character_design_path %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Story Board</a>
+       <%= link_to  "Story Board", pages_story_board_path %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Illustrations</a>
+        <%= link_to  "Illustrations", pages_illustrations_path %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <%= link_to  "Contact", pages_contact_path %>
       </li>
     </ul>
   </div>

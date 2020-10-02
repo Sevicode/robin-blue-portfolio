@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :uploads
   get 'pages/home'
   get 'pages/about'
   get 'pages/character_design'
