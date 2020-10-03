@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'pages/story_board'
   get 'pages/illustrations'
   get 'pages/contact'
-  devise_for :admins
+  devise_for :admins, skip: [:registrations]
    root to: "pages#home"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
